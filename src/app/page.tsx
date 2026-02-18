@@ -1,6 +1,11 @@
+import Nav from "./components/Nav";
+
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gabi-bg text-gabi-text">
+      <Nav />
+
       <div className="container-page pt-24 pb-24">
         {/* HERO */}
         <section className="min-h-[70vh] flex flex-col justify-center">
