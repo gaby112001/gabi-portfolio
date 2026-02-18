@@ -17,7 +17,7 @@ body {
   }
 
   .section {
-    @apply py-16 border-t border-gabi-border;
+    @apply py-20 sm:py-28 border-t border-gabi-border;
   }
 
   .card {
@@ -39,4 +39,26 @@ body {
   .chip {
     @apply rounded-full border border-gabi-border px-3 py-1 text-xs text-gabi-muted;
   }
+}
+
+/* Cursor custom */
+.cursor-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 1px solid #f4b942; /* gabi amber */
+  transform: translate(-100px, -100px);
+  transition:
+    width 180ms ease,
+    height 180ms ease,
+    background 180ms ease,
+    border 180ms ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-dot.is-hover {
+  width: 34px;
+  height: 34px;
+  background: rgba(244, 185, 66, 0.14);
+  border: 1px solid rgba(244, 185, 66, 0.9);
 }

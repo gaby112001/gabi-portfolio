@@ -1,21 +1,34 @@
 import Nav from "./components/Nav";
+import Cursor from "./components/Cursor";
+import Reveal from "./components/Reveal";
+
 
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gabi-bg text-gabi-text">
       <Nav />
+      <Cursor />
+
 
       <div className="container-page pt-24 pb-24">
         {/* HERO */}
-        <section className="min-h-[70vh] flex flex-col justify-center">
-          <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight">
-            Gabriela Jácome
-          </h1>
+        <Reveal>
+  <section className="min-h-[70vh] flex flex-col justify-center">
 
-          <p className="mt-3 text-lg text-gabi-muted">
-            Digital Product Designer + Frontend
-          </p>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
+  Diseño productos digitales
+  <span className="block text-gabi-amber">
+    donde la estructura se siente.
+  </span>
+</h1>
+
+
+          <p className="mt-8 text-lg sm:text-xl text-gabi-muted max-w-2xl">
+  Soy Gabriela Jácome, diseñadora híbrida entre producto y frontend.
+  Construyo sistemas digitales claros, funcionales y técnicamente sólidos.
+</p>
+
 
           <p className="mt-8 text-xl sm:text-2xl leading-relaxed max-w-3xl">
             Diseño y construyo sistemas digitales donde la estructura se siente.
@@ -34,7 +47,44 @@ export default function Home() {
             </a>
           </div>
         </section>
+        </Reveal>
 
+<Reveal>
+        <section className="section">
+  <div className="grid gap-12 md:grid-cols-2">
+    
+    <div>
+      <p className="text-sm uppercase tracking-widest text-gabi-muted">
+        Enfoque
+      </p>
+
+      <h2 className="mt-4 text-3xl sm:text-4xl font-semibold leading-tight">
+        Diseño como sistema.
+        <span className="block text-gabi-lavender">
+          Tecnología como lenguaje.
+        </span>
+      </h2>
+    </div>
+
+    <div className="text-gabi-muted text-lg leading-relaxed">
+      <p>
+        No diseño pantallas aisladas. Diseño flujos.
+        No escribo código por escribirlo. Construyo estructuras.
+      </p>
+
+      <p className="mt-6">
+        Mi trabajo vive en la intersección entre UX, datos,
+        lógica y ejecución técnica.
+      </p>
+    </div>
+
+  </div>
+  </section>
+  </Reveal>
+
+
+
+<Reveal>
         {/* WORK */}
         <section id="work" className="section">
           <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
@@ -65,6 +115,7 @@ export default function Home() {
             </a>
           </div>
         </section>
+        </Reveal>
       </div>
     </main>
   );
