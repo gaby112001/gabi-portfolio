@@ -95,7 +95,7 @@ export default function Home() {
           </p>
 
           <div className="mt-10 grid gap-5">
-            <a href="#" className="card group hover:border-gabi-lavender transition">
+            <a href="/work/ikea-service-reports-platform" className="card group hover:border-gabi-lavender transition">
               <h3 className="text-lg sm:text-xl font-semibold">
                 Plataforma de informes de servicios (IKEA)
               </h3>
@@ -105,6 +105,18 @@ export default function Home() {
                 <span className="text-gabi-text/90">Solución:</span> Estandarización + lógica dinámica + PDFs automáticos.
               </p>
 
+              <ul className="mt-5 space-y-2 text-sm text-gabi-muted">
+  <li>
+    <span className="text-gabi-text/90">Enfoque:</span> estandarización del flujo + estructura de datos para trazabilidad.
+  </li>
+  <li>
+    <span className="text-gabi-text/90">Implementación:</span> formularios dinámicos + generación automática de informes PDF.
+  </li>
+  <li>
+    <span className="text-gabi-text/90">Resultado:</span> consistencia técnica y mejor continuidad del servicio (sin depender del formato del proveedor).
+  </li>
+</ul>
+
               <div className="mt-4 flex flex-wrap gap-2">
                 {["HTML", "CSS", "JavaScript", "PDFMake"].map((s) => (
                   <span key={s} className="chip group-hover:text-gabi-text transition">
@@ -112,6 +124,10 @@ export default function Home() {
                   </span>
                 ))}
               </div>
+              <p className="mt-4 text-xs text-gabi-muted">
+  <span className="text-gabi-text/80">Rol:</span> UX/UI · Frontend · Estructura de datos
+</p>
+
             </a>
           </div>
         </section>
